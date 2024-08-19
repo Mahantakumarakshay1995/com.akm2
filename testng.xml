@@ -8,5 +8,5 @@
       <class name="testNGLearn.NewTestClass"/>
       
     </classes>
-  </test> <!-- AllureTest -->
-</suite> <!-- SmokeTesting -->
+  </test> <!-- checking -->
+</suite> <!-- All Type -->

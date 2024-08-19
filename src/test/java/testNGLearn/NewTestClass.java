@@ -26,7 +26,7 @@ public class NewTestClass extends NewBase {
 	public void validateTitle() 
 	{
 		String title=driver.getTitle();
-		Assert.assertEquals(title, "OrangeHR");
+		Assert.assertEquals(title, "OrangeHRM");
 	}
 	@Test()
 	public void validateDashboardPageContent()

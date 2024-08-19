@@ -8,14 +8,6 @@
           <include name="testMethod1"/>
         </methods>
       </class> <!-- AllureReport.TestCase1 -->
-      <class name="testNGLearn.NewTestClass">
-        <methods>
-          <include name="openProperties"/>
-          <include name="validateTitle"/>
-          <include name="tearDown"/>
-          <include name="browseUrl"/>
-        </methods>
-      </class> <!-- testNGLearn.NewTestClass -->
     </classes>
   </test> <!-- checking(failed) -->
 </suite> <!-- Failed suite [All Type] -->
