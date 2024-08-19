@@ -18,5 +18,7 @@ Tech Stack of Web Automation
 8.CI / CD -> GIT, Jenkins
 
 <img width="188" alt="image" src="https://github.com/user-attachments/assets/54302329-853e-4936-8a0b-ab193e075273">
+<img width="619" alt="image" src="https://github.com/user-attachments/assets/7fab283d-aabc-4852-a005-2c18cdf7acb8">
+
 
 
