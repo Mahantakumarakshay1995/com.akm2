@@ -16,3 +16,5 @@ Tech Stack of Web Automation
 7.Test Data -> From Excell Sheet
 
 8.CI / CD -> GIT, Jenkins
+
+
