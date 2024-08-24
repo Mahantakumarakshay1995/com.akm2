@@ -9,7 +9,9 @@ import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 
 public class BroswerChoice {
 	
@@ -26,11 +28,15 @@ public class BroswerChoice {
 		}
 		else if(browser.equals("ff"))
 		{
-			driver=new FirefoxDriver();
+			FirefoxOptions options = new FirefoxOptions ();
+			options.addArguments("--headless");
+			driver=new FirefoxDriver(options);
 		}
 		else if(browser.equals("edge"))
 		{
-			driver=new EdgeDriver();
+			EdgeOptions options=new EdgeOptions();
+			options.addArguments("--headless");
+			driver=new EdgeDriver(options);
 		}
 		else
 		{

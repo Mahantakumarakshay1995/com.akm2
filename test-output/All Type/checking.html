@@ -55,17 +55,88 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>checking</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Aug 24 23:56:32 IST 2024</td>
+<td>Started on:</td><td>Sun Aug 25 00:46:39 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (13 ms)</td>
+<tr><td>Total time:</td><td>60 seconds (60292 ms)</td>
 </tr><tr>
-<td>Included groups:</td><td>smoke </td>
+<td>Included groups:</td><td></td>
 </tr><tr>
 <td>Excluded groups:</td><td></td>
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='AllureReport.TestCase1.testMethod1()'><b>testMethod1</b><br>Test class: AllureReport.TestCase1</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at AllureReport.TestCase1.testMethod1(TestCase1.java:12)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace202024955", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace202024955'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at AllureReport.TestCase1.testMethod1(TestCase1.java:12)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+</pre></div></td>
+<td>0</td>
+<td>AllureReport.TestCase1@6ce86ce1</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testNGLearn.NewTestClass.validateDashboardPageContent()'><b>validateDashboardPageContent</b><br>Test class: testNGLearn.NewTestClass</td>
+<td></td>
+<td>1</td>
+<td>testNGLearn.NewTestClass@3ad2e17</td></tr>
+<tr>
+<td title='testNGLearn.NewTestClass.validateTitle()'><b>validateTitle</b><br>Test class: testNGLearn.NewTestClass</td>
+<td></td>
+<td>0</td>
+<td>testNGLearn.NewTestClass@3ad2e17</td></tr>
+<tr>
+<td title='testNGLearn.NewTestClass.validateUrl()'><b>validateUrl</b><br>Test class: testNGLearn.NewTestClass</td>
+<td></td>
+<td>1</td>
+<td>testNGLearn.NewTestClass@3ad2e17</td></tr>
+<tr>
+<td title='testNGLearn.NewTestClass.reachDashBoardPage()'><b>reachDashBoardPage</b><br>Test class: testNGLearn.NewTestClass</td>
+<td></td>
+<td>2</td>
+<td>testNGLearn.NewTestClass@3ad2e17</td></tr>
+<tr>
+<td title='AllureReport.TestCase2.testMethod2()'><b>testMethod2</b><br>Test class: AllureReport.TestCase2</td>
+<td></td>
+<td>0</td>
+<td>AllureReport.TestCase2@3adcc812</td></tr>
+</table><p>
 </body>
 </html>
