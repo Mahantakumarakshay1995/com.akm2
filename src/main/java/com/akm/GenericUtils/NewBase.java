@@ -31,7 +31,7 @@ public class NewBase {
 	public static SeleniumHelper sh=new SeleniumHelper();
 	
 	//LoginPage lp=new LoginPage(driver);
-	@BeforeSuite
+	@BeforeSuite(groups = {"smoke", "regression"})
 	public void openProperties() throws IOException
 	{
 		 file=new File(IPathConstant.PROPERTYFILEPATH);
@@ -39,7 +39,7 @@ public class NewBase {
 		config=new Properties();
 		config.load(fis); 
 	}
-	@BeforeTest
+	@BeforeTest(groups = {"smoke", "regression"})
 	public void browseUrl() throws IOException {
 		String url=config.getProperty("url");
 		String browser=config.getProperty("browser");
@@ -66,7 +66,7 @@ public class NewBase {
 
 	}
 	
-	@AfterTest
+	@AfterTest(groups = {"smoke", "regression"})
 	public void tearDown()
 	{
 		driver.quit();

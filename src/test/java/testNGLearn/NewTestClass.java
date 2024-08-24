@@ -28,13 +28,13 @@ public class NewTestClass extends NewBase {
 		String title=driver.getTitle();
 		Assert.assertEquals(title, "OrangeHRM");
 	}
-	@Test()
+	@Test(groups = "regression")
 	public void validateDashboardPageContent()
 	{
 		String ss = driver.findElement(By.xpath("//p[text()='Time at Work']")).getText();
 		Assert.assertEquals(ss,"Time at Work");
 	}
-	@Test
+	@Test(groups = "smoke")
 	public void validateUrl()
 	{
 		List<WebElement> li = driver.findElements(By.xpath("//button[@title='Assign Leave']/../..//div[@title]"));

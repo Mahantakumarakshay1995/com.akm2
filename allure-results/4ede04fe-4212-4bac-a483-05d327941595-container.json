@@ -1,0 +1,1 @@
+{"uuid":"4ede04fe-4212-4bac-a483-05d327941595","name":"Smoke","children":["c637354f-0584-4609-b35a-974d0ec86e23"],"befores":[{"name":"openProperties","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1724524961558,"stop":1724524961571}],"afters":[],"start":1724524961538,"stop":1724525056156}
