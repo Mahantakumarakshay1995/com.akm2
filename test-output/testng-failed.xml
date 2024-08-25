@@ -3,14 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="HerokuApp.webdriverUse">
+      <class name="testScripts.importExcelTestData">
         <methods>
-          <include name="openProperties"/>
-          <include name="checkDragDrop"/>
-          <include name="tearDown"/>
-          <include name="browseUrl"/>
+          <include name="createOrg"/>
         </methods>
-      </class> <!-- HerokuApp.webdriverUse -->
+      </class> <!-- testScripts.importExcelTestData -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

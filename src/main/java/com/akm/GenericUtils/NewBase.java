@@ -20,7 +20,7 @@ import com.akm.GenericUtils.WebDriverUtility;
 
 import POMpages.LoginPage;
 import broswerUtils.BroswerChoice;
-import genericUtils.SeleniumHelper;
+
 
 public class NewBase {
 	public static File file;
@@ -28,7 +28,7 @@ public class NewBase {
 	public static Properties config;
 	public static WebDriver driver;
 	BroswerChoice bc=new BroswerChoice();
-	public static SeleniumHelper sh=new SeleniumHelper();
+	
 	
 	//LoginPage lp=new LoginPage(driver);
 	@BeforeSuite(groups = {"smoke", "regression"})
@@ -48,20 +48,11 @@ public class NewBase {
 		driver.manage().window().maximize();
 		WebDriverUtility wdu=new WebDriverUtility();
 		wdu.waitUntilPageLoad(driver);
-		
-//		driver.findElement(By.xpath("//input[@name='username']")).clear();
-//		driver.findElement(By.xpath("//input[@name='username']")).sendKeys("Admin");
-//		sh.SendDataTB(driver, "//input[@name='username']", "Admin");
+// For Login In to Orange HRM page		
 //		LoginPage lp=new LoginPage(driver);
 //		lp.Login("Admin", "admin123");
-//		
 		
-//		driver.findElement(By.xpath("//input[@name='password']")).clear();
-//		driver.findElement(By.xpath("//input[@name='password']")).sendKeys("admin123");
-//		sh.SendDataTB(driver, "//input[@name='password']", "admin123");
 
-		
-//		driver.findElement(By.xpath("//button[@type='submit']")).click();
 
 
 	}

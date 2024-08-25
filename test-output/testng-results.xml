@@ -1,29 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-25T17:19:11 IST" name="Default suite" finished-at="2024-08-25T17:19:18 IST" duration-ms="6552">
+  <suite started-at="2024-08-25T17:53:30 IST" name="Default suite" finished-at="2024-08-25T17:53:31 IST" duration-ms="779">
     <groups>
     </groups>
-    <test started-at="2024-08-25T17:19:11 IST" name="Default test" finished-at="2024-08-25T17:19:18 IST" duration-ms="6552">
-      <class name="HerokuApp.webdriverUse">
-        <test-method is-config="true" signature="openProperties()[pri:0, instance:HerokuApp.webdriverUse@7a1234bf]" started-at="2024-08-25T17:19:11 IST" name="openProperties" finished-at="2024-08-25T17:19:11 IST" duration-ms="10" status="PASS">
+    <test started-at="2024-08-25T17:53:30 IST" name="Default test" finished-at="2024-08-25T17:53:31 IST" duration-ms="779">
+      <class name="ExcelltestScripts.importExcelTestData">
+        <test-method signature="createOrg()[pri:0, instance:ExcelltestScripts.importExcelTestData@632ceb35]" started-at="2024-08-25T17:53:30 IST" name="createOrg" finished-at="2024-08-25T17:53:31 IST" duration-ms="652" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openProperties -->
-        <test-method is-config="true" signature="browseUrl()[pri:0, instance:HerokuApp.webdriverUse@7a1234bf]" started-at="2024-08-25T17:19:11 IST" name="browseUrl" finished-at="2024-08-25T17:19:17 IST" duration-ms="5619" status="PASS">
+        </test-method> <!-- createOrg -->
+        <test-method signature="createOrgWithIndustry()[pri:0, instance:ExcelltestScripts.importExcelTestData@632ceb35]" started-at="2024-08-25T17:53:31 IST" name="createOrgWithIndustry" finished-at="2024-08-25T17:53:31 IST" duration-ms="34" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- browseUrl -->
-        <test-method signature="checkDragDrop()[pri:0, instance:HerokuApp.webdriverUse@7a1234bf]" started-at="2024-08-25T17:19:17 IST" name="checkDragDrop" finished-at="2024-08-25T17:19:17 IST" duration-ms="731" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkDragDrop -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:HerokuApp.webdriverUse@7a1234bf]" started-at="2024-08-25T17:19:17 IST" name="tearDown" finished-at="2024-08-25T17:19:18 IST" duration-ms="129" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- HerokuApp.webdriverUse -->
+        </test-method> <!-- createOrgWithIndustry -->
+      </class> <!-- ExcelltestScripts.importExcelTestData -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
