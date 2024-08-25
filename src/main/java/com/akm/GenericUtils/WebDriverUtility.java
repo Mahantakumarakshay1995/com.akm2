@@ -212,6 +212,12 @@ public class WebDriverUtility
 		r.keyRelease(KeyEvent.VK_ENTER);
 		
 	}
+	
+	public void dragAndDrop(WebElement ele1,WebElement ele2,WebDriver driver)
+	{
+		Actions act=new Actions(driver);
+		act.dragAndDrop(ele1, ele2).perform();;
+	}
 
 	
 	

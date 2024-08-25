@@ -66,7 +66,7 @@ public class ListnerImp extends NewBase implements ITestListener
 //			// Allure ScreenShot and SaveTestLog
 //			if (driver instanceof WebDriver) {
 //				System.out.println("Screenshot captured for test case:" + getTestMethodName(iTestResult));
-				saveFailureScreenShot(iTestResult.getName(),NewBase.driver);
+				NewBase.captureScreenshot(getTestMethodName(iTestResult));
 			}
 			//saveTextLog(getTestMethodName(iTestResult) + " failed and screenshot taken!");	
 		

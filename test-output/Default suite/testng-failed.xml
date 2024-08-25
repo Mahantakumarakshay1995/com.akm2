@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNGLearn.NewTestClass">
+      <class name="HerokuApp.webdriverUse">
         <methods>
           <include name="openProperties"/>
-          <include name="reachDashBoardPage"/>
+          <include name="checkDragDrop"/>
           <include name="tearDown"/>
           <include name="browseUrl"/>
         </methods>
-      </class> <!-- testNGLearn.NewTestClass -->
+      </class> <!-- HerokuApp.webdriverUse -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

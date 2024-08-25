@@ -52,8 +52,8 @@ public class NewBase {
 //		driver.findElement(By.xpath("//input[@name='username']")).clear();
 //		driver.findElement(By.xpath("//input[@name='username']")).sendKeys("Admin");
 //		sh.SendDataTB(driver, "//input[@name='username']", "Admin");
-		LoginPage lp=new LoginPage(driver);
-		lp.Login("Admin", "admin123");
+//		LoginPage lp=new LoginPage(driver);
+//		lp.Login("Admin", "admin123");
 //		
 		
 //		driver.findElement(By.xpath("//input[@name='password']")).clear();
@@ -66,13 +66,13 @@ public class NewBase {
 
 	}
 	
-	@AfterTest(groups = {"smoke", "regression"})
+	@AfterTest(groups = {"smoke", "regression"})//enabled = false)
 	public void tearDown()
 	{
 		driver.quit();
 	}
 	
-	public  void captureScreenshot(String fileName)
+	public static void  captureScreenshot(String fileName)
 	{
 		//TakeScrrenshot
 		String currentSystemDate=new Date().toString().replace(":","_").replace(" ", "_");
