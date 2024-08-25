@@ -43,8 +43,8 @@ public class BroswerChoice {
 		{
 			System.out.println("please load browser with chrome/ff/edge");
 		}
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+//		driver.manage().window().maximize();
+//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get(url);
 		
 		return driver;
