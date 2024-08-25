@@ -8,6 +8,7 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -19,12 +20,12 @@ public class BroswerChoice {
 	public WebDriver browserSelection(WebDriver driver,String url,String brw) throws IOException 
 	{
 		
-		
-		
 		String browser=brw;
 		if(browser.equals("chrome"))
 		{
-			driver=new ChromeDriver();	
+			ChromeOptions options=new ChromeOptions();
+			options.addArguments("--disable-notifications");
+			driver=new ChromeDriver(options);	
 		}
 		else if(browser.equals("ff"))
 		{

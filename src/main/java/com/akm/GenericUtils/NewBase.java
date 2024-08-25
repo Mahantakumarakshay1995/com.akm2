@@ -48,13 +48,11 @@ public class NewBase {
 		driver.manage().window().maximize();
 		WebDriverUtility wdu=new WebDriverUtility();
 		wdu.waitUntilPageLoad(driver);
+		
 // For Login In to Orange HRM page		
 //		LoginPage lp=new LoginPage(driver);
 //		lp.Login("Admin", "admin123");
 		
-
-
-
 	}
 	
 	@AfterTest(groups = {"smoke", "regression"})//enabled = false)
