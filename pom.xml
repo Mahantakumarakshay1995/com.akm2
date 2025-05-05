@@ -72,8 +72,16 @@
 
 </dependencies>
 
+<properties>
+<!-- Define versions of plugins and other properties -->
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+
  <build>
+ 
     <plugins>
+      <!-- Compiler Plugin -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -83,11 +91,25 @@
           <target>1.8</target>
         </configuration>
       </plugin>
+      
+       <!-- Clean Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-clean-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                    <filesets>
+                        <fileset>
+                            <directory>${project.build.directory}</directory>
+                        </fileset>
+                    </filesets>
+                </configuration>
+            </plugin>
+            
     </plugins>
+    
+    
   </build>
   
-  <properties>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
-  </properties>
+  
 </project>

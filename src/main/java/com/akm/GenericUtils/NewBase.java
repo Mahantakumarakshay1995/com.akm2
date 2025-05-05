@@ -45,7 +45,7 @@ public class NewBase {
 		String browser=config.getProperty("browser");
 		driver=bc.browserSelection(driver, url, browser);
 		
-		driver.manage().window().maximize();
+		//driver.manage().window().maximize();
 		WebDriverUtility wdu=new WebDriverUtility();
 		wdu.waitUntilPageLoad(driver);
 		
@@ -55,7 +55,7 @@ public class NewBase {
 		
 	}
 	
-	@AfterTest(groups = {"smoke", "regression"})//enabled = false)
+	@AfterTest(groups = {"smoke", "regression"},enabled = false)
 	public void tearDown()
 	{
 		driver.quit();

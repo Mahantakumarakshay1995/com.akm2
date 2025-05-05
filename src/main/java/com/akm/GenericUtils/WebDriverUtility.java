@@ -39,10 +39,51 @@ public class WebDriverUtility
 	 */
 	public void waitForElementVisibility(WebDriver driver, WebElement element)
 	{
-		WebDriverWait wait = new WebDriverWait(driver, null);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
 		wait.until(ExpectedConditions.visibilityOf(element));
 		
+	}
+	/**
+	 * If element is visiable than click
+	 * @param driver
+	 * @param element
+	 */
+	public void waitForElementVisibilityWithClick(WebDriver driver, WebElement element)
+	{
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+		wait.until(ExpectedConditions.visibilityOf(element));
+		boolean b=element.isDisplayed();
+		if(b)
+		{
+			element.click();
+		}
+		else
+		{
+			System.out.println("Element not yet Loaded");
+		}	
+	}
+	/**
+	 * wait for visibility element wait till enabled and displayed ,Specialy used for Date.
+	 * @param driver
+	 * @param element
+	 */
+	public void waitForElementVisibilityWithClickWhenDisplayedAndEnableed(WebDriver driver, WebElement element)
+	{
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+		wait.until(ExpectedConditions.visibilityOf(element));
+		boolean b=element.isDisplayed();
+		b&=element.isEnabled();
+		if(b)
+		{
+			element.click();
+		}
+		else
+		{
+			System.out.println("Element not yet Loaded,Enabled");
+		}	
 	}
 	/**
 	 * customization wait till 50 time try to get element
